@@ -1,0 +1,25 @@
+# 1. Navigate to where you saved the website file
+cd ~/Downloads  # or wherever your file is
+
+# 2. Create a new directory for your repo
+mkdir evidenciabio-website
+cd evidenciabio-website
+
+# 3. Copy the HTML file and rename it
+cp ../EvidenciaBio_Website.html index.html
+
+# 4. Initialize git repository
+git init
+
+# 5. Add your GitHub remote
+git remote add origin https://github.com/evidenciabioadvisory-blip/evidenciabio-website.git
+
+# 6. Add and commit the file
+git add index.html
+git commit -m "Initial website commit"
+
+# 7. Push to GitHub
+git branch -M main
+git push -u origin main
+
+# 8. Now enable GitHub Pages in your repo settings
